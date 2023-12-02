@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "designer-gpt"
+version = "0.1.0"
+description = ""
+authors = ["Rochan Madhusudhana <rochana.hm@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+python-dotenv = "^1.0.0"
+gradio = "^4.7.1"
+streamlit = "^1.29.0"
+pyee = "^11.1.0"
+chainlit = "^0.7.700"
+pyautogen = "^0.2.0"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pyclean = "^2.7.6"
+black = "^23.11.0"
+pytest = "^7.4.3"
+poethepoet = "^0.24.4"
+watchdog = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+dev = "chainlit run designer_gpt/app.py"
+format = "black ."
+clean = "pyclean ."
+test = "pytest"

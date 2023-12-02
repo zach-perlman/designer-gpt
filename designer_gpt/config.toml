@@ -1,0 +1,30 @@
+[UI]
+name = "Designer GPT"
+# Override default MUI light theme. (Check theme.ts)
+[UI.theme.light]
+background = "#FAFAFA"
+paper = "#FFFFFF"
+
+[UI.theme.light.primary]
+main = "#CCC"
+dark = "#CCC"
+light = "#CCC"
+
+# Override default MUI dark theme. (Check theme.ts)
+[UI.theme.dark]
+background = "#CCC"
+paper = "#CCC"
+
+[UI.theme.dark.primary]
+main = "#CCC"
+dark = "#CCC"
+light = "#CCC"
+
+[features]
+unsafe_allow_html = true
+prompt_playground = true
+multi_modal = true
+latex = true
+
+[features.speech_to_text]
+enabled = false
