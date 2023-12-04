@@ -44,7 +44,7 @@ class ObservableManager(GroupChatManager):
         else:
             cl.run_sync(
                 cl.Message(
-                    content=f'*Sending message to "{recipient.name}":*\n\n{msg}',
+                    content=f'*Sending message from "{self.name}" to "{recipient.name}":*\n\n{msg}',
                     author="AssistantAgent",
                 ).send()
             )
@@ -80,7 +80,7 @@ class ObservableAssistantAgent(AssistantAgent):
         else:
             cl.run_sync(
                 cl.Message(
-                    content=f'*Sending message to "{recipient.name}":*\n\n{msg}',
+                    content=f'*Sending message from "{self.name}" to "{recipient.name}":*\n\n{msg}',
                     author="AssistantAgent",
                 ).send()
             )
@@ -146,7 +146,7 @@ class ObservableUserProxyAgent(UserProxyAgent):
         else:
             cl.run_sync(
                 cl.Message(
-                    content=f'*Sending message to "{recipient.name}":*\n\n{msg}',
+                    content=f'*Sending message from "{self.name}" to "{recipient.name}":*\n\n{msg}',
                     author="AssistantAgent",
                 ).send()
             )
