@@ -1,9 +1,5 @@
 # Test User Prompts
 
-PROMPT_CRAFTS = """\
-Create a website design for a small business specializing in handmade crafts, with an emphasis on showcasing individual products and enabling easy online purchases.
-""".strip()
-
 PROMPT_FITNESS = """\
 Design a dynamic website for a fitness center, including sections for class schedules, trainer profiles, membership plans, and a blog on health and wellness.
 """.strip()
@@ -14,6 +10,10 @@ Create a captivating design for a travel blog, with space for blog posts, travel
 
 PROMPT_BAKERY = """\
 Create a warm, inviting website for a local bakery, featuring a menu, special offers, customer testimonials, and an online order form.
+""".strip()
+
+PROMPT_NONPROFIT = """\
+Design a website for a non-profit organization focused on environmental conservation, highlighting their mission, ongoing projects, and ways to donate or volunteer.
 """.strip()
 
 # The following are more specific
