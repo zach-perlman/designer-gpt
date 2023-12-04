@@ -1,4 +1,5 @@
 import chainlit as cl
+import shared
 from agents.trackable_agent import (
     ObservableAssistantAgent,
     ObservableManager,
@@ -70,6 +71,7 @@ async def on_chat_start():
         return
 
     prompt = prompt["content"]
+    shared.user_prompt = prompt
     await cl.Message(content=prompt).send()
     await cl.make_async(user_proxy.initiate_chat)(
         manager,
