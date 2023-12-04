@@ -55,11 +55,7 @@ class ObservableManager(GroupChatManager):
         else:
             cl.run_sync(
                 cl.Message(
-<<<<<<< HEAD
                     content=f'*Sending message from "{self.name}" to "{recipient.name}":*\n\n{msg}',
-=======
-                    content=f'*Sending message from {self.name} to "{recipient.name}":*\n\n{msg}',
->>>>>>> efbae07 (Add HTML preview feature)
                     author="AssistantAgent",
                 ).send()
             )
